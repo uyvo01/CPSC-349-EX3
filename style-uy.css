@@ -126,7 +126,7 @@ label{
     text-align: right;
 }
 .new_screen{
-    visibility:visible;
+    visibility:hidden;
 }
 @keyframes changecolor {
     from {
