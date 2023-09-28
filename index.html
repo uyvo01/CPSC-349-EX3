@@ -14,24 +14,35 @@
     <div class="screen"><label id="cal_screen">0</label></div>
 
     <div class="container">
-      <div class="number" id="7" onclick="btn_click(this)">7</div>
-      <div class="number" id="8" onclick="btn_click(this)">8</div>
-      <div class="number" id="9" onclick="btn_click(this)">9</div>
-      <div class="operation" id="+" onclick="btn_click(this)">+</div>
-      <div class="number" id="4" onclick="btn_click(this)">4</div>
-      <div class="number" id="5" onclick="btn_click(this)">5</div>
-      <div class="number" id="6" onclick="btn_click(this)">6</div>
-      <div class="operation" id="-" onclick="btn_click(this)">-</div>
-      <div class="number" id="1" onclick="btn_click(this)">1</div>
-      <div class="number" id="2" onclick="btn_click(this)">2</div>
-      <div class="number" id="3" onclick="btn_click(this)">3</div>
-      <div class="operation" id="x" onclick="btn_click(this)">x</div>
+      <div class="number" id="7">7</div>
+      <div class="number" id="8" >8</div>
+      <div class="number" id="9" >9</div>
+      <div class="operator" id="+" >+</div>
+      <div class="number" id="4" >4</div>
+      <div class="number" id="5" >5</div>
+      <div class="number" id="6" >6</div>
+      <div class="operator" id="-" >-</div>
+      <div class="number" id="1" >1</div>
+      <div class="number" id="2" >2</div>
+      <div class="number" id="3" >3</div>
+      <div class="operator" id="x" >x</div>
       <div class="C" id="C" onclick="btn_click(this)">C</div>
-      <div class="number" id="0" onclick="btn_click(this)">0</div>
-      <div class="operation" id="=" onclick="btn_click(this)">=</div>
-      <div class="operation" id="/" onclick="btn_click(this)">/</div>     
+      <div class="number" id="0" >0</div>
+      <div class="operator" id="=" >=</div>
+      <div class="operator" id="/" >/</div>     
     </div>
   </div>
   <div class="new_screen"><label id="new_screen">1</label></div>
+  <script>
+    // add onclick event to all number class.
+    let bnumber=document.querySelectorAll(".number");
+    bnumber.forEach(number=> {
+      number.addEventListener('click',()=> btn_click(number));
+    });
+    let op=document.querySelectorAll(".operator");
+    op.forEach(operator=> {
+      operator.addEventListener('click',()=> btn_click(operator));
+    });
+  </script>
   </body>
 </html>

@@ -71,7 +71,7 @@ html {
     animation-duration: 1s;
     transform: translateY(2px);
 }
-.operation {
+.operator {
     background-color: black;
     border: none;
     color: white;
@@ -86,7 +86,7 @@ html {
     width: 24%;
     
   }
-.operation:hover{
+.operator:hover{
     background-color: orange;
     transition: background 0s;
     animation-duration: 1s;
